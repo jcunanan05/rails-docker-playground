@@ -46,7 +46,7 @@ $ rails test
 If the test suite passes, you'll be ready to run the app in a local server:
 
 ```
-$ rails server
+$ rails server -b 0.0.0.0
 ```
 
 For more information, see the
