@@ -203,6 +203,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (= 3.3.7)
+  bundler (= 2.0.2)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   guard (= 2.13.0)
