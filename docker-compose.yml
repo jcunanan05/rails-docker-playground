@@ -2,9 +2,17 @@ version: "3.7"
 
 services:
   ruby_dev:
-    build: .
+    build:
+      context: .
     container_name: ruby_container
+    working_dir: /home/app
+    environment:
+      - "PORT=3000"
+    expose:
+      - "3000"
     ports:
       - "3000:3000"
     volumes:
       - ./:/home/app
+    entrypoint:
+      - /bin/bash
